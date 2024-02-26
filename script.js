@@ -66,7 +66,7 @@ document.querySelector(".foot-up").addEventListener("click", function(){
 })
 
 document.querySelector(".scroll-down").addEventListener("click", function(){
-    scroll.scrollTo(700);
+    scroll.scrollTo(740);
 })
 
 
