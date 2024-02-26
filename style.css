@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "freight big pro light";
+    src: url(/fonts/Freight\ Big\ Pro\ Light.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -129,6 +134,14 @@ nav .menu h4{
 
 nav svg path{
     fill: black;
+}
+
+.open {
+    display: none;
+}
+
+.close {
+    display: initial;
 }
 
 
@@ -390,8 +403,8 @@ footer {
 }
 
 .foot-down {
-    color: white;
-    padding: 0 50px;
+    color: #ffffff;
+    padding: 0 20px;
     height: 50%;
     width: 100%;
     background-color: #000000;
@@ -411,4 +424,142 @@ footer {
 
 .right p{
     margin-left: 60px;
+}
+
+@media (max-width: 600px) {
+    nav .menu h4{
+        display: none;
+    }
+
+    .open {
+        display: initial;
+    }
+
+    .close {
+        display: none;
+    }
+
+    nav {
+        padding: 20px 30px;
+    }
+
+    .home {
+        padding: 50px;
+    }
+    .home h1 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 11vw;
+        line-height: 0.8;
+        letter-spacing: -3px;
+    }
+
+    .loader {
+        padding: 50px;
+    }
+    .loader h1 {
+            text-align: center;
+            font-weight: 200;
+            font-size: 11vw;
+            line-height: 0.8;
+            letter-spacing: -3px;
+    }
+
+    .home-foot {
+        padding: 0px 30px;
+    }
+
+    .elem h2{
+        font-size: 12vw;
+        line-height: 10.1vw;
+    }
+
+    .elem .blur1 {
+        width: 9%;
+        left: 9%;
+        background: linear-gradient(to right,#f5e31bf1,#F5E41B,#f5e31bf1);
+        box-shadow: 10px 0px 20px 20px #F5E41B, -10px 0px 20px 20px #F5E41B;
+    }
+    .elem .blur2 {
+        width: 6%;
+        left: 9%;
+        background: linear-gradient(to right,#f5e31bf1,#F5E41B,#f5e31bf1);
+        box-shadow: 10px 0px 20px 20px #F5E41B, -10px 0px 20px 20px #F5E41B;
+    }
+    .elem .blur3 {
+        width: 11%;
+        left: 9%;
+        background: linear-gradient(to right,#f5e31bf1,#F5E41B,#f5e31bf1);
+        box-shadow: 10px 0px 20px 20px #F5E41B, -10px 0px 20px 20px #F5E41B;
+    }
+    .elem .blur4 {
+        width: 14%;
+        left: 9%;
+        background: linear-gradient(to right,#f5e31bf1,#F5E41B,#f5e31bf1);
+        box-shadow: 10px 0px 20px 20px #F5E41B, -10px 0px 20px 20px #F5E41B;
+    }
+    .elem .blur5 {
+        width: 7%;
+        left: 9%;
+        background: linear-gradient(to right,#f5e31bf1,#F5E41B,#f5e31bf1);
+        box-shadow: 10px 0px 20px 20px #F5E41B, -10px 0px 20px 20px #F5E41B;
+    }
+
+    .part3 {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .div1, .div2, .div3 {
+        height: fit-content;
+        width: 100%;
+        padding: 0 10px 10px 10px;
+        gap: 10px;
+    }
+
+    .foot-up i{
+        font-size: 8vw;
+        font-weight: 300;
+    }
+    
+    .foot-up p {
+        font-size: 3.5vw;
+        font-family: Helvetica;
+    }
+
+    .foot-down {
+        flex-direction: column;
+        font-size: 2.8vw;
+        align-items: flex-start;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: -10px;
+    }
+    
+    .right p{
+        margin-left: 0px;
+
+    }
+
+    .insta {
+        padding-inline-start: 0;
+    }
+
+    .num {
+        display: none;
+    }
+
+    .overlay p{
+        font-size: 11vw;
+        text-align: center;
+        line-height: 0.8;
+    }
 }

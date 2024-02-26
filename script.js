@@ -40,9 +40,21 @@ elems.forEach(function(ele){
     ele.addEventListener("mouseenter", function(){
         let bgimg = ele.getAttribute("data-img");
         document.querySelector(".part2").style.backgroundImage = `url(${bgimg})`;
+        document.querySelector(".moving h5").style.opacity = "1";
     });
     ele.addEventListener("mouseleave", function() {
-        // Set the background color of the element with class "part2" to black when mouse leaves
+        document.querySelector(".part2").style.backgroundImage = 'none';
+        document.querySelector(".part2").style.backgroundColor = 'black';
+        document.querySelector(".moving h5").style.opacity = "0";
+    });
+});
+
+elems.forEach(function(ele){
+    ele.addEventListener("touchstart", function(){
+        let bgimg = ele.getAttribute("data-img");
+        document.querySelector(".part2").style.backgroundImage = `url(${bgimg})`;
+    });
+    ele.addEventListener("touchend", function() {
         document.querySelector(".part2").style.backgroundImage = 'none';
         document.querySelector(".part2").style.backgroundColor = 'black';
     });
@@ -52,3 +64,9 @@ elems.forEach(function(ele){
 document.querySelector(".foot-up").addEventListener("click", function(){
     scroll.scrollTo(0);
 })
+
+document.querySelector(".scroll-down").addEventListener("click", function(){
+    scroll.scrollTo(700);
+})
+
+
